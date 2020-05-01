@@ -39,14 +39,15 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 <p><strong>Solution</strong></p>
 
+<pre>
 SELECT CITY
 FROM STATION
-WHERE 
+WHERE
     CITY NOT LIKE "A%"
     AND CITY NOT LIKE "E%"
     AND CITY NOT LIKE "I%"
     AND CITY NOT LIKE "O%"
     AND CITY NOT LIKE "U%"
-GROUP BY CITY;
-
+GROUP BY CITY
+<pre>
 
